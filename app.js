@@ -31,15 +31,6 @@ const showImages = (images) => {
 
 };
 
-//   document.getElementById("search-btn")
-//     .addEventListener("keyup", function(event) {
-//     event.preventDefault();
-//     if (event.key === 13) {
-//         document.getElementById("search-btn").click();
-//     }
-// });
-
-
 
 const getImages = query => {
   setTimeout(() => {
@@ -54,6 +45,7 @@ let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
   element.classList.toggle('added');
+  
  
   let item = sliders.indexOf(img);
   if (item === -1) {
@@ -162,11 +154,3 @@ const toggleSpinner = () => {
   imagesArea.toggle('d-none');
   
 };
-// sliderBtn.addEventListener('click', function () {
-//   const duration = document.getElementById('duration').value || 1000;
-//   if (duration < 0) {
-//     style.display = 'none';
-//   } else if(duration > 0) {
-      
-//   }
-// });
